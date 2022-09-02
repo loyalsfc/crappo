@@ -41,6 +41,11 @@ nav{
   line-height: 28px;
   margin-right: 2rem;
 }
+.menu-item:hover, .login:hover{
+  cursor: pointer;
+  text-decoration: underline;
+  color: #3671E9;
+}
 .login, .register, .pipe-bar{
   display: inline-block;
   font-size: 1rem;

@@ -23,17 +23,17 @@ function Header(){
             </nav>
             <div className="value-proposition">
                 <div className="about-container">
-                    <div className="info">
+                    <div data-aos="fade-up-right" data-aos-duration="2000" className="info">
                         <span className="save">75% SAVE</span>
                         <span>For the Black Friday weekend</span>
                     </div>
-                    <h2 className="about-title">Fastest & secure platform to invest in crypto</h2>
-                    <p className="about-content">Buy and sell cryptocurrencies, trusted by 10M wallets with over $30 billion in transaction</p>
-                    <button className="button-sm">
+                    <h2 data-aos="fade-left"  data-aos-duration="2000" className="about-title">Fastest & secure platform to invest in crypto</h2>
+                    <p  data-aos="slide-up" data-aos-duration="2000" className="about-content">Buy and sell cryptocurrencies, trusted by 10M wallets with over $30 billion in transaction</p>
+                    <button data-aos="flip-down" data-aos-duration="2000" className="button-sm">
                         Try for FREE <span>{">"}</span>
                     </button>
                 </div>
-                <div className="bitcoin-illustration">
+                <div data-aos="slide-up" data-aos-duration="2000" className="bitcoin-illustration">
                     <img src={BitcoinIllustration} />
                 </div>
             </div>

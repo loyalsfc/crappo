@@ -7,7 +7,7 @@ function Startmining(){
         <section className="start-mining">
             <div className="bar"></div>
             <div className="bar2"></div>
-            <div className="mining-wrapper">
+            <div data-aos="zoom-out" className="mining-wrapper">
                 <div className="mining-text">
                     <h4 className="mining-title">Start mining now</h4>
                     <p className="mining-content">Join now with CRAPPO to get the latest news and start mining now</p>

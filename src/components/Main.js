@@ -10,13 +10,22 @@ function Main(){
         <main>
             <div className="main-background"></div>
             <div className="check-how-much">
-                <h3 className="why-title">Check how much you can earn</h3>
-                <p className="check-how-much-content"> Let’s check your hash rate to see how much you will earn today, <br/>Exercitation veniam consequat sunt nostrud amet.</p>
+                <h3 data-aos="zoom-in-left" className="why-title">Check how much you can earn</h3>
+                <p 
+                    data-aos="zoom-in-left"  
+                    data-aos-delay="200"
+                    data-aos-easing="ease-in-out-back"
+                    className="check-how-much-content"
+                > 
+                    Let’s check your hash rate to see how much you will earn today, <br/>Exercitation veniam consequat sunt nostrud amet.
+                </p>
             </div>
             <Calculate />
-            <h3 className="trade-securely">Trade securely and market the high growth cryptocurrencies.</h3>
+            <h3 data-aos="fade-up-right" className="trade-securely">Trade securely and market the high growth cryptocurrencies.</h3>
             <div className="cryptocurrencies-container">
-                <Cryptocurrencies 
+                <Cryptocurrencies
+                    animation="zoom-in-right"
+                    delay="0"
                     img={Bitcoin} 
                     name="Bitcoin" 
                     symbol="BTC" 
@@ -26,7 +35,9 @@ function Main(){
                 >
                     <button className="button-crypto button-sm">Start Mining <span>{">"}</span></button>
                 </Cryptocurrencies>
-                <Cryptocurrencies 
+                <Cryptocurrencies
+                    animation="zoom-in"
+                    delay="100" 
                     img={Ethereum} 
                     name="Ethereum" 
                     symbol="ETH" 
@@ -34,7 +45,9 @@ function Main(){
                 >
                     <button className="crypto-button button-crypto">{">"}</button>
                 </Cryptocurrencies>
-                <Cryptocurrencies 
+                <Cryptocurrencies
+                    animation="zoom-in-left"
+                    delay="200" 
                     img={Litecoin} 
                     name="Litecoin"
                     symbol="LTC" 

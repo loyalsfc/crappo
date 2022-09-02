@@ -11,9 +11,9 @@ function WhyCrappo(){
             <img src={Darch}  className="d-arch" />
             <img src={Uarch}  className="u-arch" />
             <div className="numbers-container">
-                <Numbers icon="chart-column" number="$30B" text="Digital Currency Exchange"/>
-                <Numbers icon="user" number="10M+" text="Trusted wallet investor"/>
-                <Numbers icon="earth-americas" number="195" text="Countries supported"/>
+                <Numbers delay="" icon="chart-column" number="$30B" text="Digital Currency Exchange"/>
+                <Numbers delay="200" icon="user" number="10M+" text="Trusted wallet investor"/>
+                <Numbers delay="400" icon="earth-americas" number="195" text="Countries supported"/>
             </div>
             <Feature 
                 img={Illustration}
@@ -26,7 +26,7 @@ function WhyCrappo(){
 
 function Numbers(props){
     return(
-        <div className="numbers-wrapper">
+        <div data-aos="fade-up" data-aos-delay={props.delay} className="numbers-wrapper">
             <div className="number-icon">
                 <i className={"fa solid fa-" + props.icon}></i>
             </div>
