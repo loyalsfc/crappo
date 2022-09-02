@@ -9,6 +9,24 @@ header{
   background-color: #0D0D2B;
   color: #fff;
   padding: 1.25rem 7.5rem;
+  position: relative;
+}
+.header-bar{
+  position: absolute;
+  width: 120px;
+  height: 1002.26px;
+  left: 50%;
+  /* top: 1037.86px; */
+  background: linear-gradient(180.09deg, rgba(255, 255, 255, 0) 0.49%, rgba(255, 255, 255, 0.04) 39.06%, rgba(255, 255, 255, 0) 99.92%);
+  transform: rotate(-120deg);
+}
+.header-bar2{
+  position: absolute;
+  width: 120px;
+  height: 997.88px;
+  left: 90%;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.04) 34.75%, rgba(255, 255, 255, 0.01) 100%);
+  transform: rotate(-120deg);
 }
 nav{
   display: flex;
@@ -51,6 +69,7 @@ nav{
   width: fit-content;
   border-radius: 2rem;
   padding: 0.25rem;
+  transition: ease-in-out 1s;
 }
 .info span{
   padding: 0.25rem 1rem;
@@ -108,6 +127,30 @@ nav{
   background-color: #0D0D2B;
   padding: 1.25rem 7rem;
   padding-top: 2.5rem;
+  position: relative;
+}
+.why-bar{
+  position: absolute;
+  width: 120px;
+  height: 997.88px;
+  left: 0;
+  top: 5rem;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 34.75%, rgba(255, 255, 255, 0.1) 100%);
+  transform: rotate(60deg);
+}
+.d-arch{
+  position: absolute;
+  width: 12rem;
+  height: 12rem;
+  right: -1rem;
+  top: 10%;
+}
+.u-arch{
+  position: absolute;
+  width: 8rem;
+  height: 8rem;
+  right: -3rem;
+  bottom: 10%;
 }
 .numbers-container{
   display: flex;
@@ -135,7 +178,6 @@ h4.numbers{
   color: #fff;
 }
 .numbers-text{
-  font-family: 'Rubik';
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -152,7 +194,6 @@ h4.numbers{
 }
 .why-title{
   margin-bottom: 1.5rem;
-  font-family: 'Rubik';
   font-style: normal;
   font-weight: 700;
   font-size: 2.5rem;
@@ -160,7 +201,6 @@ h4.numbers{
   color: #FFFFFF
 }
 .why-main-content{
-  font-family: 'Rubik';
   font-style: normal;
   font-weight: 400;
   font-size: 1rem;
@@ -172,6 +212,7 @@ h4.numbers{
 main{
   padding: 10rem 7.5rem;
   position: relative;
+  z-index: 1;
 }
 .main-background{
   position: absolute;
@@ -315,4 +356,165 @@ main{
   display: block;
   margin: auto;
   margin-top: 1.6rem;
+}
+
+.feature{
+  background-color: #2B076E;
+  padding: 6.25rem 7.5rem 0;
+  position: relative;
+  overflow: hidden;
+}
+.circle{
+  position: absolute;
+  width: 686px;
+  height: 686px;
+  border-radius: 50%;
+}
+.bg-circle{
+  background: conic-gradient(from 180deg at 50% 50%, rgba(255, 255, 255, 0.16) 0deg, rgba(255, 255, 255, 0) 360deg);
+  transform: rotate(90deg);
+  top: -20%;
+}
+.sm-circle{
+  background: conic-gradient(from 180deg at 50% 50%, rgba(255, 255, 255, 0.1) 0deg, rgba(255, 255, 255, 0) 360deg);
+  transform: rotate(-120deg);
+  top: 80%;
+  right: -25%;
+}
+.feature h3{
+  font-size: 2rem !important;
+}
+.feature-title{
+  font-size: 2.5rem;
+  text-align: center;
+  width: 80%;
+  margin: auto;
+  color: #fff;
+  line-height: 150%;
+  margin-bottom: 6.25rem;
+}
+.flex-inverse{
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-between;
+}
+.detailed-statistics > div{
+  width: 50%;
+}
+.detailed-statistics > img{
+  margin-left: -7.5rem;
+  margin-right: 5.7rem;
+}
+.width-682 > img{
+  /* width: 30%; */
+  width: 682px;
+  max-width: 90%;
+}
+.feature > .why-crappo-content{
+  margin-bottom: 7.5rem;
+}
+
+.start-mining{
+  padding: 5.5rem 7.5rem;
+  background-image: linear-gradient(180deg, #2B076E 0%, #0D0D2B 100%);
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+.bar, .bar2{
+  position: absolute;
+  width: 200px;
+  height: 700px;
+  left: 100px;
+  top: 10px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 40.77%, rgba(255, 255, 255, 0.3) 186.22%);
+  transform: rotate(-45deg);
+}
+.bar2{
+  left: 500px;
+}
+.mining-wrapper{
+  background: #3671E9;
+  border-radius: 16px;
+  padding: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+  overflow: hidden;
+}
+/* .vector  */
+.vector.eth{
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.vector.btc{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.mining-title{
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  line-height: 3rem;
+  font-weight: 700;
+  mix-blend-mode: normal;
+}
+.mining-content{
+  max-width: 21.75rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  letter-spacing: 0.01em;
+}
+.mining-wrapper input{
+  color: #fff !important;
+}
+.mining-wrapper button {
+  background-color: #fff;
+  color: #3671E9;
+  margin-top: 0;
+} 
+input:active{
+  outline: none;
+}
+input[type=email]::placeholder{
+  color: #FFFFFF;
+}
+
+footer{
+  background-color: #0D0D2B;
+  padding: 5rem 7.5rem;
+}
+.footer-links{
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+  align-items: flex-start;
+}
+
+.link-title{
+  margin-bottom: 1.5rem;
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+.footer-link li{
+  font-weight: 400;
+  font-size: 1rem;
+  list-style-type: none;
+  line-height: 2.5rem;
+  color: #E0E0E0;
+}
+.footer-payment{
+  font-weight: 500;
+  font-size: 1.7rem;
+  line-height: 3rem;
+  color: #FFFFFF;
+  mix-blend-mode: normal;
+  width: 355px;
+  margin-bottom: 2.5rem;
+}
+.mastercard{
+  /* display: block; */
+  margin: 0 2.5rem;
 }

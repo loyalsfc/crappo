@@ -5,6 +5,8 @@ import BitcoinIllustration from '../assets/Illustration.svg'
 function Header(){
     return (
         <header>
+            <div className="header-bar"></div>
+            <div className="header-bar2"></div>
             <nav>
                 <img src={Logo} height={40} alt="Logo" />
                 <ul className="nav-menu">
