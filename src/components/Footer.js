@@ -42,7 +42,7 @@ function Footer(){
                         <i className="fa-brands fa-instagram"></i>
                         <i className="fa-brands fa-youtube"></i>
                         <i className="fa-brands fa-twitter"></i>
-                        <i class="fa-brands fa-linkedin"></i>
+                        <i className="fa-brands fa-linkedin"></i>
                     </div>
                 </div>
             </div>
