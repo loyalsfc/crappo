@@ -6,10 +6,15 @@ import Image3 from "../assets/feature-2-img.png"
 
 function Features(){
     return(
-        <section className="feature">
-            <div className="circle bg-circle"></div>
-            <div className="circle sm-circle"></div>
-            <h3 data-aos="slide-down" className="feature-title">Market sentiments, portfolio, and run the infrastructure of your choice</h3>
+        <section className="feature padding-mobile">
+            <div className="circle bg-circle d-sm-none"></div>
+            <div className="circle sm-circle d-sm-none"></div>
+            <h3 
+                data-aos="slide-down" 
+                className="feature-title title-mobile width-100 mb-2"
+            >
+                Market sentiments, portfolio, and run the infrastructure of your choice
+            </h3>
             <Feature 
                 class="flex-inverse"
                 img={Image1}

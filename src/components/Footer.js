@@ -6,9 +6,9 @@ import bitcoin from "../assets/bitcoin.png"
 
 function Footer(){
     return(
-        <footer>
-            <div className="footer-links">
-                <img src={Logo} />
+        <footer className="padding-mobile">
+            <div className="footer-links flex-column-align-center mb-2">
+                <img src={Logo} className="mb-2" />
                 <Footerlinks 
                     title="Quick Link"
                     link1="Home"
@@ -34,8 +34,15 @@ function Footer(){
                     </div>
                 </div>
             </div>
-            <div className="footer-text">
-
+            <div className="footer-text flex-column">
+                <p className="copyright">&copy;2021 CRAPPO. All rights reserved </p>
+                <div className="social">
+                    <i className="fa-brands fa-facebook-f"></i>
+                    <i className="fa-brands fa-instagram"></i>
+                    <i className="fa-brands fa-youtube"></i>
+                    <i className="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-linkedin"></i>
+                </div>
             </div>
         </footer>
     )
@@ -44,8 +51,8 @@ function Footer(){
 function Footerlinks(props){
     return(
         <div className="link-wrap">
-            <h5 className="link-title">{props.title}</h5>
-            <ul className="footer-link">
+            <h5 className="link-title mb-1">{props.title}</h5>
+            <ul className="footer-link mb-2">
                 <li>{props.link1}</li>
                 <li>{props.link2}</li>
                 <li>{props.link3}</li>

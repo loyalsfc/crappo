@@ -4,19 +4,21 @@
   box-sizing: border-box;
   font-family: 'Rubik', sans-serif;
 }
-
+body{
+  /* background-color: #0D0D2B; */
+}
 header{
   background-color: #0D0D2B;
   color: #fff;
   padding: 1.25rem 7.5rem;
   position: relative;
+  overflow: hidden;
 }
 .header-bar{
   position: absolute;
   width: 120px;
   height: 1002.26px;
   left: 50%;
-  /* top: 1037.86px; */
   background: linear-gradient(180.09deg, rgba(255, 255, 255, 0) 0.49%, rgba(255, 255, 255, 0.04) 39.06%, rgba(255, 255, 255, 0) 99.92%);
   transform: rotate(-120deg);
 }
@@ -74,7 +76,6 @@ nav{
   width: fit-content;
   border-radius: 2rem;
   padding: 0.25rem;
-  transition: ease-in-out 1s;
 }
 .info span{
   padding: 0.25rem 1rem;
@@ -95,7 +96,7 @@ nav{
   font-size: 3.7rem;
   font-weight: 700;
   margin: 1.5rem 0;
-  line-height: 70px;
+  line-height: 4.75rem;
 }
 .about-content{
   font-weight: 400;
@@ -133,6 +134,7 @@ nav{
   padding: 1.25rem 7rem;
   padding-top: 2.5rem;
   position: relative;
+  overflow: hidden;
 }
 .why-bar{
   position: absolute;
@@ -403,15 +405,11 @@ main{
   align-items: center;
   justify-content: space-between;
 }
-.detailed-statistics > div{
-  width: 50%;
-}
 .detailed-statistics > img{
   margin-left: -7.5rem;
   margin-right: 5.7rem;
 }
 .width-682 > img{
-  /* width: 30%; */
   width: 682px;
   max-width: 90%;
 }
@@ -496,6 +494,7 @@ footer{
   justify-content: space-between;
   color: #fff;
   align-items: flex-start;
+  margin-bottom: 7.5rem;
 }
 
 .link-title{
@@ -520,6 +519,155 @@ footer{
   margin-bottom: 2.5rem;
 }
 .mastercard{
-  /* display: block; */
   margin: 0 2.5rem;
+}
+.hamburger-menu{
+  display: none;
+}
+.mobile-menu{
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: -100vh;
+  left: 0;
+  background-color: #0D0D2B;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  transition: ease-in-out 0.5s;
+}
+.mobile-nav-menu .menu-item{
+  display: block;
+  font-size: 1.6rem;
+  line-height: 4.5rem;
+  text-align: center;
+}
+.mobile-register.button-sm{
+  margin-top: 0;
+}
+.mobile-register, .mobile-login, .mobile-pipe-bar{
+  font-size: 1.6rem;
+  line-height: 4.5rem;
+  color: #fff;
+  margin: 0 1rem;
+}
+.mobile-register{
+  background-color: #3671E9;
+  border-radius: 2rem;
+  padding: 0.25rem 1.5rem;
+  color: #fff;
+  border: none;
+  line-height: normal;
+}
+.close-btn{
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  cursor: pointer;
+  font-size: 2rem;
+}
+.footer-text{
+  font-size: 1rem;
+  line-height: 1.5rem;
+  letter-spacing: 0.01em;
+  color: #FFFFFF;
+  mix-blend-mode: normal;
+  display: flex;
+  justify-content: space-between;
+}
+.footer-text i{
+  margin-left: 2.5rem;
+}
+section, main{
+  overflow: hidden;
+}
+@media screen and (max-width: 500px){
+  .d-sm-none{
+    display: none;
+  }
+  .padding-mobile{
+    padding: 1.25rem;
+  }
+  nav{
+    margin-bottom: 2.25rem;
+  }
+  .hamburger-menu{
+    display: block;
+    font-size: 1.9rem;
+    line-height: 2.2rem;
+    margin-left: auto;
+  }
+  .flex-column{
+    flex-direction: column;
+  }
+  .title-mobile {
+    font-size: 2.25rem;
+    line-height: 120%;
+  }
+  .bitcoin-illustration > img{
+    width: 100%;
+    margin-top: 0;
+  }
+  .flex-column-align-center{
+    flex-direction: column;
+    align-items: center;
+  }
+  .mb-1{
+    margin-bottom: 1rem;
+  }
+  .mb-2{
+    margin-bottom: 2rem !important;
+  }
+  .width-100{
+    width: 100% !important;
+  }
+  .why-crappo-content{
+    flex-direction: column-reverse;
+  }
+  .why-main-content{
+    min-width: 100%;
+  }
+  .button-sm{
+    margin-top: 1.5rem;
+  }
+  .hash-rate{
+    padding: 1.5rem 1.5rem 0;
+  }
+  .ths{
+    margin: 2rem 0;
+  }
+  .hash-rate button{
+    width: fit-content;
+  }
+  .main-background{
+    height: 26rem;
+  }
+  .revenue{
+    padding: 1.5rem;
+  }
+  .detailed-statistics > img, input[type=email]{
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .width-682 > img, .mining-content{
+    max-width: 100%;
+  }
+  footer{
+    text-align: center;
+  }
+  .footer-payment{
+    font-size: 1rem;
+    line-height: 1.4rem;
+    width: 100%;
+  }
+  .footer-text i{
+    text-align: center;
+    margin: 1rem;
+  }
+  .info{
+    display: flex;
+    align-items: center;
+  }
 }

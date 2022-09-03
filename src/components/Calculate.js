@@ -2,10 +2,10 @@ import React from "react"
 
 function Calculate(){
     return(
-      <div className='calculate'>
-        <div className='hash-rate'>
-          <input type="text" className="hash-rate-input" placeholder="Enter your hash rate" />
-          <select className="ths">
+      <div className='calculate width-100 mb-2'>
+        <div className='hash-rate flex-column'>
+          <input type="text" className="hash-rate-input width-100" placeholder="Enter your hash rate" />
+          <select className="ths width-100">
             <option>TH/s</option>
             <option>TH/m</option>
             <option>TH/h</option>

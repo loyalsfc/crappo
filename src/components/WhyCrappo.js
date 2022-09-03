@@ -6,11 +6,11 @@ import Feature from "./Feature"
 
 function WhyCrappo(){
     return(
-        <section className="why-crappo">
-            <div className="why-bar"></div>
-            <img src={Darch}  className="d-arch" />
-            <img src={Uarch}  className="u-arch" />
-            <div className="numbers-container">
+        <section className="why-crappo padding-mobile">
+            <div className="why-bar d-sm-none"></div>
+            <img src={Darch}  className="d-arch d-sm-none" />
+            <img src={Uarch}  className="u-arch d-sm-none" />
+            <div className="numbers-container flex-column-align-center">
                 <Numbers delay="" icon="chart-column" number="$30B" text="Digital Currency Exchange"/>
                 <Numbers delay="200" icon="user" number="10M+" text="Trusted wallet investor"/>
                 <Numbers delay="400" icon="earth-americas" number="195" text="Countries supported"/>
@@ -26,7 +26,7 @@ function WhyCrappo(){
 
 function Numbers(props){
     return(
-        <div data-aos="fade-up" data-aos-delay={props.delay} className="numbers-wrapper">
+        <div data-aos="fade-up" data-aos-delay={props.delay} className="numbers-wrapper mb-2">
             <div className="number-icon">
                 <i className={"fa solid fa-" + props.icon}></i>
             </div>
