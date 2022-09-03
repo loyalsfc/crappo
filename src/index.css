@@ -10,7 +10,7 @@ body{
 header{
   background-color: #0D0D2B;
   color: #fff;
-  padding: 1.25rem 7.5rem;
+  padding: 1.25rem 0;
   position: relative;
   overflow: hidden;
 }
@@ -93,10 +93,10 @@ nav{
   margin-right: 1rem;
 }
 .about-title{
-  font-size: 3.7rem;
+  font-size: 3.0rem;
   font-weight: 700;
   margin: 1.5rem 0;
-  line-height: 4.75rem;
+  line-height: 4rem;
 }
 .about-content{
   font-weight: 400;
@@ -131,7 +131,7 @@ nav{
 
 .why-crappo{
   background-color: #0D0D2B;
-  padding: 1.25rem 7rem;
+  padding: 1.25rem 0;
   padding-top: 2.5rem;
   position: relative;
   overflow: hidden;
@@ -217,7 +217,7 @@ h4.numbers{
   max-width: 80%;
 }
 main{
-  padding: 10rem 7.5rem;
+  padding: 10rem 0;
   position: relative;
   z-index: 1;
 }
@@ -367,7 +367,7 @@ main{
 
 .feature{
   background-color: #2B076E;
-  padding: 6.25rem 7.5rem 0;
+  padding: 6.25rem 0 0;
   position: relative;
   overflow: hidden;
 }
@@ -380,13 +380,13 @@ main{
 .bg-circle{
   background: conic-gradient(from 180deg at 50% 50%, rgba(255, 255, 255, 0.16) 0deg, rgba(255, 255, 255, 0) 360deg);
   transform: rotate(90deg);
-  top: -20%;
+  top: -30%;
 }
 .sm-circle{
   background: conic-gradient(from 180deg at 50% 50%, rgba(255, 255, 255, 0.1) 0deg, rgba(255, 255, 255, 0) 360deg);
   transform: rotate(-120deg);
   top: 80%;
-  right: -25%;
+  right: -30%;
 }
 .feature h3{
   font-size: 2rem !important;
@@ -406,7 +406,7 @@ main{
   justify-content: space-between;
 }
 .detailed-statistics > img{
-  margin-left: -7.5rem;
+  width: 50%;
   margin-right: 5.7rem;
 }
 .width-682 > img{
@@ -418,7 +418,7 @@ main{
 }
 
 .start-mining{
-  padding: 5.5rem 7.5rem;
+  padding: 5.5rem 0;
   background-image: linear-gradient(180deg, #2B076E 0%, #0D0D2B 100%);
   color: #fff;
   position: relative;
@@ -487,7 +487,7 @@ input[type=email]::placeholder{
 
 footer{
   background-color: #0D0D2B;
-  padding: 5rem 7.5rem;
+  padding: 5rem 0;
 }
 .footer-links{
   display: flex;
@@ -583,7 +583,40 @@ footer{
 section, main{
   overflow: hidden;
 }
-@media screen and (max-width: 500px){
+.margin-x-auto{
+  margin-left: auto;
+  margin-right: auto;
+}
+.container {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  width: 100%;
+}
+@media screen and (min-width: 640px){
+  .container {
+    max-width: 640px;
+  }
+}
+@media screen and (min-width: 768px){
+  .container {
+    max-width: 768px;
+  }
+}
+@media screen and (min-width: 1024px){
+  .container {
+    max-width: 1024px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+@media screen and (min-width: 1200px){
+  .container {
+    max-width: 1200px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+@media screen and (max-width: 1024px){
   .d-sm-none{
     display: none;
   }
@@ -626,6 +659,9 @@ section, main{
   .why-crappo-content{
     flex-direction: column-reverse;
   }
+  .why-crappo img{
+    margin-top: -4rem;
+  }
   .why-main-content{
     min-width: 100%;
   }
@@ -642,7 +678,7 @@ section, main{
     width: fit-content;
   }
   .main-background{
-    height: 26rem;
+    height: 23rem;
   }
   .revenue{
     padding: 1.5rem;
